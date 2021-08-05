@@ -38,6 +38,7 @@ field.onblur = function () {
 const resetCommentField = () => {
   field.value = "";
   cmtBox.style.paddingBottom = "25px";
+  field.style.height = "40px";
   btn.style.visibility = "hidden";
   btn.style.opacity = "0";
   btn.style.transition = "0s";
