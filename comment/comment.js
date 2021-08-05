@@ -182,7 +182,7 @@ async function postComment() {
     } else {
       if (content.value.length > 0) {
         await createComment();
-        // resetCommentField();
+        resetCommentField();
       }
     }
   } catch (error) {
