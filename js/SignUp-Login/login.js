@@ -8,7 +8,6 @@ const sigup = document.getElementById("btnSignup");
 
 btnLogin.onclick = () => {
   if (typeof Storage !== "undefined") {
-    localStorage.setItem("emailLogin", email.value);
   } else {
     swal({
       title: "Your browser does not support localStorage!",
@@ -27,6 +26,8 @@ btnLogin.onclick = () => {
       const user = userCredential.user;
 
       if (user.emailVerified == true) {
+        localStorage.setItem("emailLogin", email.value);
+
         swal(
           {
             title: "Sign in Success!",
