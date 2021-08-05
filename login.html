@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streamit</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.css"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Typography CSS -->
+    <link rel="stylesheet" href="./css/typography.css" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+
+  <body>
+    <section class="sign-in-page">
+      <div class="container">
+        <div
+          class="
+            row
+            justify-content-center
+            align-items-center
+            height-self-center
+          "
+        >
+          <div class="col-lg-5 col-md-12 align-self-center">
+            <div class="sign-user_card">
+              <div class="sign-in-page-data">
+                <div class="sign-in-from w-100 m-auto">
+                  <h3 class="mb-3 text-center">Sign In</h3>
+                  <div class="mt-4">
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input
+                        type="email"
+                        class="form-control mb-0"
+                        name="email"
+                        id="email"
+                        placeholder="Enter email"
+                        autocomplete="off"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input
+                        type="password"
+                        class="form-control mb-0"
+                        name="password"
+                        id="password"
+                        placeholder="Password"
+                        required
+                      />
+                    </div>
+
+                    <div class="sign-info">
+                      <div
+                        class="
+                          custom-control custom-checkbox
+                          d-inline-block
+                          pb-2
+                        "
+                      >
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="customCheck"
+                        />
+                        <label class="custom-control-label" for="customCheck"
+                          >Remember Me</label
+                        >
+                      </div>
+                      <br />
+                      <button
+                        type="submit"
+                        id="btnSignin"
+                        class="btn btn-hover"
+                        style="display: block; margin: 0 auto"
+                      >
+                        Sign In
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="d-flex justify-content-center links pb-1">
+                  Don't have an account?
+                  <button
+                    type="submit"
+                    id="btnSignup"
+                    class="text-primary ml-2"
+                    style="border: unset; background: unset; cursor: pointer"
+                  >
+                    Sign Up
+                  </button>
+                </div>
+                <div class="d-flex justify-content-center links">
+                  <a href="reset-password.html" class="f-link"
+                    >Forgot your password?</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+  <script src="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.min.js"></script>
+  <script src="./js/SignUp-Login/FireBase.js" type="module"></script>
+  <script src="./js/SignUp-Login/login.js" type="module"></script>
+</html>

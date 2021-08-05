@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <!-- Mirrored from templates.iqonic.design/streamit/frontend/html/setting.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Jul 2021 14:28:56 GMT -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Streamit</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Typography CSS -->
+    <link rel="stylesheet" href="./css/typography.css" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- trung css -->
+    <link rel="stylesheet" href="./css/SignUp-Login/setting.css" />
+    <!-- SweetAlert2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@7.29.2/dist/sweetalert2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="loading">
+      <div id="loading-center"></div>
+    </div>
+    <!-- Header -->
+    <header id="main-header">
+      <div class="main-header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12">
+              <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a
+                  href="#"
+                  class="navbar-toggler c-toggler"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <div class="navbar-toggler-icon" data-toggle="collapse">
+                    <span class="navbar-menu-icon navbar-menu-icon--top"></span>
+                    <span
+                      class="navbar-menu-icon navbar-menu-icon--middle"
+                    ></span>
+                    <span
+                      class="navbar-menu-icon navbar-menu-icon--bottom"
+                    ></span>
+                  </div>
+                </a>
+                <a class="navbar-brand" href="index.html">
+                  <img
+                    class="img-fluid logo"
+                    src="images/logo.png"
+                    alt="streamit"
+                  />
+                </a>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <div class="menu-main-menu-container">
+                    <ul id="top-menu" class="navbar-nav ml-auto">
+                      <li class="menu-item">
+                        <a href="./index.html">Home</a>
+                      </li>
+                      <li class="menu-item">
+                        <a id="action" href="#">Action</a>
+                      </li>
+                      <li class="menu-item">
+                        <a id="anime" href="#">Animation</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#">More Genres</a>
+                        <ul class="sub-menu menu-item-expand">
+                          <div class="menu-expand-inner">
+                            <ul>
+                              <li class="menu-item">
+                                <a id="comedy" href="#">Comedy</a>
+                              </li>
+                              <li class="menu-item">
+                                <a id="drama" href="#">Drama</a>
+                              </li>
+                              <li class="menu-item">
+                                <a id="fantasy" href="#">Fantasy</a>
+                              </li>
+                            </ul>
+                            <ul>
+                              <li class="menu-item">
+                                <a id="mystery" href="#">Mystery</a>
+                              </li>
+                              <li class="menu-item">
+                                <a id="romance" href="#">Romance</a>
+                              </li>
+                              <li class="menu-item">
+                                <a id="thriller" href="#">Thriller</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mobile-more-menu">
+                  <a
+                    href="javascript:void(0);"
+                    class="more-toggle"
+                    id="dropdownMenuButton"
+                    data-toggle="more-toggle"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="ri-more-line"></i>
+                  </a>
+                  <div class="more-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="navbar-right position-relative">
+                      <ul
+                        class="
+                          d-flex
+                          align-items-center
+                          justify-content-end
+                          list-inline
+                          m-0
+                        "
+                      >
+                        <li>
+                          <a href="#" class="search-toggle">
+                            <i class="ri-search-line"></i>
+                          </a>
+                          <div class="search-box iq-search-bar">
+                            <form action="#" class="searchbox">
+                              <div class="form-group position-relative">
+                                <input
+                                  type="text"
+                                  class="text search-input font-size-12"
+                                  placeholder="type here to search..."
+                                />
+                                <i class="search-link ri-search-line"></i>
+                              </div>
+                            </form>
+                          </div>
+                        </li>
+                        <li class="nav-item nav-icon">
+                          <a href="#" class="search-toggle position-relative">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="22"
+                              height="22"
+                              class="noti-svg"
+                            >
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path
+                                d="M18 10a6 6 0 1 0-12 0v8h12v-8zm2 8.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0v8.667zM9.5 21h5a2.5 2.5 0 1 1-5 0z"
+                              />
+                            </svg>
+                            <span class="bg-danger dots"></span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="
+                              iq-user-dropdown
+                              search-toggle
+                              d-flex
+                              align-items-center
+                            "
+                          >
+                            <img
+                              id="AvatarMB"
+                              src="images/user/user.jpg"
+                              class="img-fluid avatar-40 rounded-circle"
+                              alt="user"
+                            />
+                          </a>
+                          <div class="iq-sub-dropdown iq-user-dropdown">
+                            <div class="iq-card shadow-none m-0">
+                              <div class="iq-card-body p-0 pl-3 pr-3">
+                                <a
+                                  href="./setting.html"
+                                  class="iq-sub-card setting-dropdown"
+                                >
+                                  <div class="media align-items-center">
+                                    <div class="right-icon">
+                                      <i
+                                        class="ri-settings-4-line text-primary"
+                                      ></i>
+                                    </div>
+                                    <div class="media-body ml-3">
+                                      <h6 class="mb-0">Settings</h6>
+                                    </div>
+                                  </div>
+                                </a>
+                                <a
+                                  href="./login.html"
+                                  class="iq-sub-card setting-dropdown"
+                                >
+                                  <div class="media align-items-center">
+                                    <div class="right-icon">
+                                      <i
+                                        class="
+                                          ri-logout-circle-line
+                                          text-primary
+                                        "
+                                      ></i>
+                                    </div>
+                                    <div class="media-body ml-3">
+                                      <h6 id="SignMB" class="mb-0"></h6>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="navbar-right menu-right">
+                  <ul class="d-flex align-items-center list-inline m-0">
+                    <li class="nav-item nav-icon">
+                      <a href="#" class="search-toggle device-search">
+                        <i class="ri-search-line"></i>
+                      </a>
+                      <div class="search-box iq-search-bar d-search">
+                        <form
+                          id="searchFormWEB"
+                          action=""
+                          class="searchbox"
+                          onsubmit="return false"
+                        >
+                          <div class="form-group position-relative">
+                            <input
+                              id="searchInpWEB"
+                              type="text"
+                              class="text search-input font-size-12"
+                              placeholder="type here to search..."
+                            />
+                            <i class="search-link ri-search-line"></i>
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                    <li class="nav-item nav-icon">
+                      <a
+                        href="#"
+                        class="
+                          iq-user-dropdown
+                          search-toggle
+                          p-0
+                          d-flex
+                          align-items-center
+                        "
+                        data-toggle="search-toggle"
+                      >
+                        <img
+                          id="AvatarWEB"
+                          src="images/user/user.jpg"
+                          class="img-fluid avatar-40 rounded-circle"
+                          alt="user"
+                        />
+                      </a>
+                      <div class="iq-sub-dropdown iq-user-dropdown">
+                        <div class="iq-card shadow-none m-0">
+                          <div class="iq-card-body p-0 pl-3 pr-3">
+                            <a
+                              href="./setting.html"
+                              class="iq-sub-card setting-dropdown"
+                            >
+                              <div class="media align-items-center">
+                                <div class="right-icon">
+                                  <i
+                                    class="ri-settings-4-line text-primary"
+                                  ></i>
+                                </div>
+                                <div class="media-body ml-3">
+                                  <h6 class="my-0">Settings</h6>
+                                </div>
+                              </div>
+                            </a>
+                            <a
+                              href="./login.html"
+                              class="iq-sub-card setting-dropdown"
+                            >
+                              <div class="media align-items-center">
+                                <div class="right-icon">
+                                  <i
+                                    class="ri-logout-circle-line text-primary"
+                                  ></i>
+                                </div>
+                                <div class="media-body ml-3" id="Logout">
+                                  <h6 id="SignWEB" class="mb-0"></h6>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="nav-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+    <!-- MainContent -->
+    <section class="m-profile setting-wrapper">
+      <div class="container">
+        <h4 class="main-title mb-4">Account</h4>
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <div class="sign-user_card text-center">
+              <div
+                id="divAvatar"
+                class="rounded-circle img-fluid d-block mx-auto mb-3"
+              >
+                <img
+                  id="avatar"
+                  src=""
+                  class="rounded-circle img-fluid d-block mx-auto mb-3"
+                  alt="user"
+                  style="width: 150px; height: 150px"
+                />
+                <i id="camera" class="fas fa-camera fa-2x"></i>
+              </div>
+              <h5 id="username" class="mb-3 pb-3 a-border">Name</h5>
+              <div class="row align-items-center justify-content-between mb-3">
+                <div class="col-md-12">
+                  <span class="text-light font-size-13">Email</span>
+                  <p id="email" class="mb-0"></p>
+                </div>
+              </div>
+              <div class="row align-items-center justify-content-between mb-3">
+                <div class="col-md-12">
+                  <span class="text-light font-size-13">Phone Number</span>
+                  <p id="phone" class="mb-0"></p>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <button
+                  style="border: unset; background: unset; padding: 10px"
+                  class="text-primary"
+                  id="btnChangeInfo"
+                >
+                  Change
+                </button>
+              </div>
+              <div class="change col-md-12">
+                <button
+                  style="border: unset; background: unset"
+                  class="text-primary"
+                  id="btnChangePW"
+                >
+                  Change password
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="listFollowedFilm" class="col-lg-8">
+            <h5 class="mb-3 pb-3 a-border">List Followed Films</h5>
+            <div class="col-md-12 p-0 mb-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact" class="footer-one iq-bg-dark">
+      <!-- Address -->
+      <div class="footer-top">
+        <div class="container-fluid">
+          <div class="row footer-standard">
+            <div class="col-lg-7">
+              <div class="widget text-left">
+                <div class="menu-footer-link-1-container">
+                  <ul id="menu-footer-link-1" class="menu p-0">
+                    <li
+                      id="menu-item-7314"
+                      class="
+                        menu-item
+                        menu-item-type-post_type
+                        menu-item-object-page menu-item-7314
+                      "
+                    >
+                      <a href="#">Terms Of Use</a>
+                    </li>
+                    <li
+                      id="menu-item-7316"
+                      class="
+                        menu-item
+                        menu-item-type-post_type
+                        menu-item-object-page menu-item-7316
+                      "
+                    >
+                      <a href="privacy-policy.html">Privacy-Policy</a>
+                    </li>
+                    <li
+                      id="menu-item-7118"
+                      class="
+                        menu-item
+                        menu-item-type-post_type
+                        menu-item-object-page menu-item-7118
+                      "
+                    >
+                      <a href="faq.html">FAQ</a>
+                    </li>
+                    <li
+                      id="menu-item-7118"
+                      class="
+                        menu-item
+                        menu-item-type-post_type
+                        menu-item-object-page menu-item-7118
+                      "
+                    >
+                      <a href="watch-video.html">Watch List</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="widget text-left">
+                <div class="textwidget">
+                  <p>
+                    <small
+                      >© 2021 STREAMIT. All Rights Reserved. All videos and
+                      shows on this platform are trademarks of, and all related
+                      images and content are the property of, Streamit Inc.
+                      Duplication and copy of this is strictly prohibited. All
+                      rights reserved.</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 mt-4 mt-lg-0">
+              <h6 class="footer-link-title">Follow Us :</h6>
+              <ul class="info-share">
+                <li>
+                  <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a target="_blank" href="#"
+                    ><i class="fa fa-google-plus"></i
+                  ></a>
+                </li>
+                <li>
+                  <a target="_blank" href="#"><i class="fa fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+              <div class="widget text-left">
+                <div class="textwidget">
+                  <h6 class="footer-link-title">Streamit App</h6>
+                  <div class="d-flex align-items-center">
+                    <a class="app-image" href="#">
+                      <img src="images/footer/01.jpg" alt="play-store" /> </a
+                    ><br />
+                    <a class="ml-3 app-image" href="#"
+                      ><img src="images/footer/02.jpg" alt="app-store"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Address END -->
+    </footer>
+    <!-- MainContent End-->
+    <!-- back-to-top -->
+    <div id="back-to-top">
+      <a class="top" href="#top" id="top"> <i class="fa fa-angle-up"></i> </a>
+    </div>
+    <!-- back-to-top End -->
+
+    <!-- firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-storage.js"></script>
+
+    <script src="./js/SignUp-Login/FireBase.js" type="module"></script>
+
+    <!-- jQuery, Popper JS -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.all.min.js"></script>
+    <!-- Slick JS -->
+    <script src="./js/slick.min.js"></script>
+    <!-- owl carousel Js -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- select2 Js -->
+    <script src="./js/select2.min.js"></script>
+    <!-- Magnific Popup-->
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <!-- Slick Animation-->
+    <script src="./js/slick-animation.min.js"></script>
+    <!-- Custom JS-->
+    <script src="./js/custom.js"></script>
+
+    <script src="./js/SignUp-Login/md5.js" type="module"></script>
+    <script src="./js/SignUp-Login/setting.js" type="module"></script>
+    <script src="./film-tag/JS/basic2.js" type="module"></script>
+    <script src="./film-tag/JS/style.js" type="module"></script>
+    <script src="./js/SignUp-Login/signout.js"></script>
+    <script src="./js/SignUp-Login/avatar.js" type="module"></script>
+    <script src="./js/SignUp-Login/search.js"></script>
+  </body>
+
+  <!-- Mirrored from templates.iqonic.design/streamit/frontend/html/setting.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Jul 2021 14:28:56 GMT -->
+</html>

@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#commentSection {
+  /* display: flex; */
+  color: rgb(255, 255, 255);
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+
+#commentSection h2 {
+  font-family: "Audiowide", sans-serif;
+}
+
+.commentBox {
+  margin: auto;
+  width: 75%;
+  border: 2px solid #333;
+  padding: 25px 10px;
+  transition: 0.4s;
+}
+
+.commentBox h2 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+textarea {
+  font-family: sans-serif;
+  font-size: 17px;
+  color: #fff;
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  background-color: transparent;
+  margin-bottom: 10px;
+  resize: none;
+  outline: none;
+  overflow: hidden;
+  transition: 0.5s;
+  line-height: 1.6;
+}
+
+.cmtButtons {
+  transition: 1s;
+  visibility: hidden;
+  opacity: 0;
+  display: block;
+  float: right;
+}
+
+#commentBtn,
+#clear {
+  font-family: sans-serif;
+  font-size: 15px;
+  padding: 0 10px;
+  width: unset;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#commentBtn {
+  color: #fff;
+  background-color: rgb(143, 16, 16);
+}
+
+#clear {
+  color: white;
+  background-color: transparent;
+}
+
+/* Test for comment section */
+#testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.testimonial-heading {
+  letter-spacing: 1px;
+  margin: 30px 0px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-heading h1 {
+  font: 2.2rem;
+  font-weight: 500;
+  background-color: #202020;
+  color: white;
+  padding: 10px 20px;
+}
+
+.testimonial-heading span {
+  font-size: 1.3rem;
+  color: #252525;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.testimonial-box-container {
+  width: 100%;
+}
+
+.testimonial-box {
+  width: 100%;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  /* background-color: white; */
+  padding: 20px;
+  /* margin: 15px; */
+  cursor: pointer;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: covers;
+  object-position: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.name-user {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-user strong {
+  /* color: #3d3d3d; */
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.name-user span {
+  color: #979797;
+  font-size: 0.8rem;
+}
+
+.box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.client-comment {
+  display: flex;
+}
+
+.client-comment .editBtn {
+  margin: 3px 25px;
+}
+
+.client-comment .updateBtn {
+  margin: auto 25px;
+}
+
+.client-comment p {
+  font-size: 1rem;
+  /* color: #4b4b4b; */
+  color: white;
+}
+
+#comment-section li {
+  list-style: none;
+}

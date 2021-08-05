@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <!-- Mirrored from templates.iqonic.design/streamit/frontend/html/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Jul 2021 14:28:56 GMT -->
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Streamit</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Typography CSS -->
+    <link rel="stylesheet" href="./css/typography.css" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.css"
+    />
+  </head>
+
+  <body>
+    <!-- loader Start -->
+    <!-- <div id="loading">
+   <div id="loading-center">
+   </div>
+</div> -->
+    <!-- loader END -->
+    <!-- MainContent -->
+    <section class="sign-in-page">
+      <div class="container">
+        <div
+          class="
+            row
+            justify-content-center
+            align-items-center
+            height-self-center
+          "
+        >
+          <div class="col-lg-7 col-md-12 align-self-center">
+            <div class="sign-user_card">
+              <div class="sign-in-page-data">
+                <div class="sign-in-from w-100 m-auto">
+                  <h3 class="mb-3 text-center">Sign Up</h3>
+                  <div class="mt-4">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="username">Username</label>
+                            <input
+                              type="text"
+                              class="form-control mb-0"
+                              name="username"
+                              id="username"
+                              placeholder="Enter username"
+                              autocomplete="off"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="phone">Phone number</label>
+                            <input
+                              type="text"
+                              class="form-control mb-0"
+                              name="phone"
+                              id="phone"
+                              placeholder="Enter phone number"
+                              autocomplete="off"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                              type="email"
+                              class="form-control mb-0"
+                              name="email"
+                              id="email"
+                              placeholder="Enter email"
+                              autocomplete="off"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="password">Password</label>
+                              <input
+                                type="password"
+                                class="form-control mb-0"
+                                name="password"
+                                id="password"
+                                placeholder="Password"
+                                required
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="rePassword">Repeat passwod</label>
+                              <input
+                                type="password"
+                                class="form-control mb-0"
+                                name="rePassword"
+                                id="rePassword"
+                                placeholder="Password"
+                                required
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      id="btnSignup"
+                      type="submit"
+                      class="btn btn-hover"
+                      style="display: block; margin: 0 auto"
+                    >
+                      Sign Up
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-3">
+                <div class="d-flex justify-content-center links pb-1">
+                  Already have an account?
+                  <button
+                    id="btnLogin"
+                    type="submit"
+                    class="text-primary ml-2"
+                    style="border: unset; background: unset; cursor: pointer"
+                  >
+                    Sign In
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MainContent End-->
+    <!-- ------------------------------------------------ -->
+    <!-- trungJS -->
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script> -->
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+
+    <script src="./js/SignUp-Login/FireBase.js" type="module"></script>
+    <script src="./js/SignUp-Login/signup.js" type="module"></script>
+    <script src="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.min.js"></script>
+  </body>
+
+  <!-- Mirrored from templates.iqonic.design/streamit/frontend/html/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Jul 2021 14:28:56 GMT -->
+</html>

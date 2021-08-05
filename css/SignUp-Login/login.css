@@ -1,0 +1,199 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("../../images/login/login.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 2000px) {
+  .center {
+    height: 100%;
+    margin: auto;
+  }
+
+  #login {
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    height: auto;
+  }
+
+  #login:hover {
+    opacity: 0.8;
+    transition: 0.8s;
+  }
+
+  h1 {
+    color: whitesmoke;
+    font-family: fantasy;
+    padding-top: 10px;
+  }
+
+  input {
+    margin-bottom: 15px;
+  }
+
+  #avatar {
+    word-wrap: break-word;
+    width: 180px;
+    color: white;
+  }
+
+  i {
+    margin-right: 10px;
+  }
+
+  a {
+    color: white;
+    float: left;
+    font-weight: 500;
+  }
+
+  a:hover {
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: unset;
+  }
+
+  .btn {
+    margin: 10px 10px;
+    opacity: 0.5;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    width: 35%;
+    font-weight: 600;
+  }
+
+  .btn:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    opacity: 1;
+    transition: 0.8s;
+    color: whitesmoke;
+  }
+
+  #login > p {
+    color: white;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  #login > p:hover,
+  h1:hover {
+    cursor: context-menu;
+  }
+
+  .or > a {
+    margin-top: 10px;
+    opacity: 0.5;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    width: 100%;
+    font-weight: 600;
+  }
+
+  .or > a:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    opacity: 1;
+    transition: 0.8s;
+  }
+}
+@media screen and (max-width: 480px) {
+  .center {
+    height: 100%;
+    margin: auto;
+  }
+
+  #login {
+    background-color: black;
+    opacity: 0.4;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    height: 350px;
+  }
+
+  #login:hover {
+    opacity: 0.6;
+    transition: 0.8s;
+  }
+
+  h1 {
+    color: whitesmoke;
+    font-family: fantasy;
+    padding-top: 10px;
+  }
+
+  input {
+    margin-bottom: 15px;
+  }
+
+  i {
+    margin-right: 10px;
+  }
+
+  a {
+    color: white;
+    float: left;
+    font-weight: 500;
+  }
+
+  a:hover {
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: unset;
+  }
+
+  .btn {
+    margin: 10px 10px;
+    opacity: 0.5;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    width: 35%;
+    font-weight: 600;
+  }
+
+  .btn:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    opacity: 1;
+    transition: 0.8s;
+  }
+
+  #login > p {
+    color: white;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  #login > p:hover,
+  h1:hover {
+    cursor: context-menu;
+  }
+
+  .or > a {
+    margin-top: 10px;
+    opacity: 0.5;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    width: 100%;
+    font-weight: 600;
+  }
+
+  .or > a:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    opacity: 1;
+    transition: 0.8s;
+  }
+}

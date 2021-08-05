@@ -1,0 +1,23 @@
+#divAvatar {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+#avatar:hover {
+  filter: brightness(40%);
+  transition: all 0.8s;
+  cursor: pointer;
+}
+#avatar:hover + #camera {
+  opacity: 1;
+  transition: all 0.8s;
+}
+#camera {
+  position: absolute;
+  bottom: 10px;
+  left: 60px;
+  opacity: 0;
+}
+#camera:hover {
+  cursor: pointer;
+}
